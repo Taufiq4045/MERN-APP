@@ -28,7 +28,7 @@ const app = express();
    
       // Middleware to allow access to API's
       // CORS enabled specific to netlify site/origin
-      app.use(cors({ origin: ["guviposts.netlify.com"]}));
+      app.use(cors());
 
       // Users Routes
       app.use("/users", userRoutes);
