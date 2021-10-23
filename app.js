@@ -42,7 +42,7 @@ const app = express();
        // Posts Routes
        app.use("/posts",postRoutes);
       
-      const port= process.env.PORT || 3001;
+      const port = process.env.PORT || 3001;
 
       // Server Start
       app.listen(port, () => console.log("Server Started At -", port));
